@@ -8,7 +8,7 @@
 <!--==============FLATICON==================-->
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
 <!--================CSS===================-->
-    <link rel="stylesheet" href="/Assets/CSS/styles.css">
+    <link rel="stylesheet" href="/PHP/Assets/CSS/styles.css">
 <!--==============SWIPER CSS===============-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
@@ -27,7 +27,7 @@
 
             <nav class="nav container">
                 <a href="Index.php" class="nav__logo">
-                    <img src="/Assets/Img/logo2.png" alt="" class="nav__logo-img">
+                    <img src="/PHP/Assets/Img/zamazor.png" alt="" class="nav__logo-img">
                 </a>
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
@@ -53,21 +53,23 @@
                     </ul>
 
                     <div class="header__search">
-                        <input type="text" placeholder="Busca un Articulo..." class="form__input">
+                        <label>
+                            <input type="text" placeholder="Busca un Articulo..." class="form__input">
+                        </label>
                         <button class="search__btn">
-                            <img src="/Assets/Img/search.png" alt="">
+                            <img src="/PHP/Assets/Img/search.png" alt="">
                         </button>
                     </div>
                 </div>
 
                 <div class="header__user-actions">
                     <a href="wishlist.php" class="header__action-btn">
-                        <img src="/Assets/Img/icon-heart.svg" alt="">
+                        <img src="/PHP/Assets/Img/icon-heart.svg" alt="">
                         <span class="count">3</span>
                     </a>
 
                     <a href="Cart.php" class="header__action-btn">
-                        <img src="/Assets/Img/icon-cart.svg" alt="">
+                        <img src="/PHP/Assets/Img/icon-cart.svg" alt="">
                         <span class="count">3</span>
                     </a>
                 </div>
@@ -174,7 +176,7 @@
                                     </div>
                                     <div class="product__price flex">
                                         <span class="new__price"><?php echo $columnProd['precio']; ?></span>
-                                        <span class="new__price"><?php echo $columnProd['precioOriginal']; ?></span>
+                                        <span class="old__price"><?php echo $columnProd['precioOriginal']; ?></span>
                                     </div>
                                     <a href="#" class="action__btn cart__btn" aria-label="añadir al carrito">
                                         <i class="fi fi-rr-shopping-bag-add"></i>
@@ -193,6 +195,6 @@
 <!--=================SWIPER JS================-->
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <!--=================MAIN JS================-->
-        <script src="/Assets/JS/main.js"></script>
+        <script src="/PHP/Assets/JS/main.js"></script>
     </body>
 </html>
